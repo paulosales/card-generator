@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="color-scheme" content="light" />
+
+    <title>Cartão de Visita Digital | Crie e compartilhe offline</title>
+    <meta
+      name="description"
+      content="Crie seu cartão de visita digital gratuito, com QR Code e 10 modelos. Funciona 100% no navegador, offline, e pode ser instalado como app."
+    />
+    <meta name="author" content="Paulo Rogério Sales Santos" />
+    <meta name="robots" content="index, follow" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Cartão Digital" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <script>
+      // Counterpart to public/404.html's GitHub Pages SPA fallback: restore
+      // the originally requested deep link before the router mounts.
+      ;(function () {
+        var redirect = sessionStorage.getItem('spa-redirect')
+        if (redirect) {
+          sessionStorage.removeItem('spa-redirect')
+          if (redirect !== location.pathname + location.search + location.hash) {
+            history.replaceState(null, '', redirect)
+          }
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <noscript>Você precisa habilitar o JavaScript para usar este gerador de cartões.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

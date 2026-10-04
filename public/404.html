@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <script>
+      // GitHub Pages serves this file for any unknown path (no server-side
+      // rewrites available there). We stash the originally requested URL and
+      // bounce to the app root; index.html restores it via
+      // history.replaceState before the router reads the location, so deep
+      // links like /view?data=... keep working on GitHub Pages too.
+      sessionStorage.setItem('spa-redirect', location.pathname + location.search + location.hash)
+      location.replace('/')
+    </script>
+  </head>
+  <body></body>
+</html>
